@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iTech--Heaven for Programmer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html">iTech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="C.html">C</a></li>
+                            <li><a class="dropdown-item" href="C++.html">C++</a></li>
+                            <li>
+                                <!-- <hr class="dropdown-divider"> It's for Divider  -->
+                            </li>
+                            <li><a class="dropdown-item" href="Java.html">Java</a></li>
+                            <li><a class="dropdown-item" href="Python.html">Python</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li> -->
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div class="mx-2">
+
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+        </div>
+        </div>
+    </nav>
+
+
+    <!--Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to iTech</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SignUp Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get an iTech Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <p class="fw-bold my-2">C Programming</p>
+
+        <img src="https://source.unsplash.com/200x200/?Coding,programming" class="img-thumbnail" alt="...">
+
+
+
+        <p class="fw-bold my-4">Introduction</p>
+
+        <p class="lh-base my-4">
+            C programming is a general-purpose programming language that was originally designed for writing system
+            software.
+
+            It is a procedural language, meaning that it defines the steps to solve a problem. It is also an imperative
+            language, meaning that it focuses on commands and how they are executed.
+
+            It has been used to write operating systems, compilers, and many other types of application software.
+
+            C is a general-purpose, imperative computer programming language developed in 1972 by Dennis Ritchie at the
+            Bell Labs.
+
+            The C programming language was designed to be compiled and run on a wide variety of computer architectures.
+            It has also been widely adopted as a systems programming language, meaning that it is often used to write
+            software that manages the low-level hardware components of a computer.
+
+            C is one of the most popular programming languages in use today, and it is one of the languages supported by
+            all major compilers.
+        </p>
+
+        <p class="fw-bold my-4">What is the Difference Between C and Java Languages?</p>
+
+        <p class="fw-normal">C-----> C is a general-purpose programming language that is used for developing system
+            software and applications</p>
+        <p class="fw-normal">Java--> Java is a general-purpose programming language that can be used to create both
+            desktop and web applications.</p>
+        <p class="fw-normal">C-----> C is also the most popular language for writing operating systems, compilers, and
+            other system software.</p>
+        <p class="fw-normal">Java--> Java was originally designed to be compiled into bytecode which could then be
+            executed by any Java Virtual Machine (JVM) regardless of the computer's hardware. </p>
+        <p class="fw-normal">C-----> C was originally designed to be compiled with a relatively small interpreter in
+            order
+            to make it possible to run on small computers with limited resources.</p>
+        <p class="fw-normal">Java--> Java has been standardized by the Java Community Process (JCP) under the name "Java
+            Platform, Standard Edition" (Java SE). </p>
+        <p class="fw-normal">C-----> C is a low-level programming language.</p>
+        <p class="fw-normal">Java--> Java is a high-level programming language and it can be used for both client-side
+            and server-side applications.</p>
+        <p class="fw-normal">C-----> C support pointers.</p>
+        <p class="fw-normal">Java--> Java does not support pointers</p>
+
+
+        <p class="lh-base my-4">
+        <p class="fw-bold"> C is a programming language, just like Java or Python</p>
+
+        🔮 It's relatively simple to learn<br />
+        🔮 There are tons of resources online, such as YouTube videos and tutorials<br />
+        🔮 C can be applied virtually anywhere; coding web applications, writing firmware for microcontrollers,
+        building compilers<br />
+        <br />
+
+        🔮 A fast, compact, and efficient computer programming language.<br />
+        🔮 Favors programmer time over CPU time<br />
+        🔮 Includes intuitive operators<br />
+        🔮 Functions as early as possible to simplify debugging<br />
+        <br />
+
+        <p class="fw-bold"> It's been used to develop systems as big as Microsoft Windows.</p>
+        💡 Portable<br />
+        💡 Ability to create low-level software and hardware interfaces<br />
+        💡 Known for performance optimization
+        <br />
+        <br />
+        <p class="fw-bold"> This course is designed to help you learn C programming, from basic syntax to advanced
+            coding.</p>
+        ✅ Step-by-step tutorials for beginners<br />
+        ✅ Challenges and projects when you need a break<br />
+        ✅ Create games or get involved in AI!<br />
+        <br />
+        <p class="fw-bold">Advantages of c language </p>
+        <p class="lh-base my-4">💡 Develop software without third-party coding<br />
+            💡 Gaining access to all app code<br />
+            💡 Outputs quickly<br />
+            💡 Efficient<br />
+            💡 Widely used<br />
+            💡 Runs on many platforms<br />
+            
+    </div>
+    <div class="card text-bg-dark">
+        <img src="https://source.unsplash.com/1400x150/?laptop,technology" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <h5 class="card-title">C Programming</h5>
+            <p class="card-text">
+                If you want to get into programming, this is one of the languages you should learn. It's simple yet<br/>
+                powerful, used by a lot of programmers around the world. If you're just starting out, it can be a great<br/>
+                way to start learning how programming works!
+            </p>
+            
+        </div>
+    </div>
+
+    <footer class="container my-4">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2021–2022 iTech, Inc. · <a
+            href="https://www.privacypolicygenerator.info/live.php?token=pYg54CcuiyJhUopJH7LXhLP0nkDmbF0F">Privacy</a>
+          · <a href="https://www.termsandconditionsgenerator.com/live.php?token=4Qi31r0unBdFRpoICYNdvklf4l270jGM">Terms</a>
+        </p>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

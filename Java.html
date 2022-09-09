@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iTech--Heaven for Programmer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html">iTech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="C.html">C</a></li>
+                            <li><a class="dropdown-item" href="C++.html">C++</a></li>
+                            <li>
+                                <!-- <hr class="dropdown-divider"> It's for Divider  -->
+                            </li>
+                            <li><a class="dropdown-item" href="Java.html">Java</a></li>
+                            <li><a class="dropdown-item" href="Python.html">Python</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li> -->
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div class="mx-2">
+
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+        </div>
+        </div>
+    </nav>
+
+
+    <!--Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to iTech</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SignUp Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get an iTech Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="fw-bold my-2">Java Programming</p>
+        <img src="https://source.unsplash.com/200x200/?Coding,programming" class="img-thumbnail" alt="...">
+
+
+        <p class="fw-bold my-4">Introduction</p>
+        <p class="lh-base my-2">
+            JAVA was created by James Gosling at Sun Microsystems Inc in the year 1995, later procured by Oracle
+            Corporation. It is a basic programming language. Java makes composing, incorporating, and troubleshooting
+            programming simple. It assists with making reusable code and measured programs. Java is a class-based,
+            object-situated programming language and is intended to have as scarcely any execution conditions as could
+            be expected. A broadly useful programming language made for engineers to compose once run anyplace that is
+            ordered Java code can run on all stages that help Java. Java applications are arranged to byte code that can
+            run on any Java Virtual Machine. The punctuation of Java is like c/c++.
+        </p>
+
+
+        <p class="fw-bold my-4">What is the Difference Between Java and C++ Languages?</p>
+
+        <p class="fw-normal">Java--> Java is Platforms Independent</p>
+        <p class="fw-normal">C++--> C++ is Platform Dependent.</p>
+        <p class="fw-normal">Java--> Java is both Compiled and Interpreted Language.</p>
+        <p class="fw-normal">C++--> C++ is a Compiled Language </p>
+        <p class="fw-normal">Java--> It doesn’t have Virtual Keyword.</p>
+        <p class="fw-normal">C++--> It has Virtual keywords. </p>
+        <p class="fw-normal">Java--> It supports only method overloading and doesn’t allow operator overloading.</p>
+        <p class="fw-normal">C++--> It supports both method and operator overloading.</p>
+        <p class="fw-normal">Java--> Java is only an object-oriented programming language.</p>
+        <p class="fw-normal">C++--> C++ is both a procedural and an object-oriented programming language.</p>
+
+        <p class="fw-bold my-4">Advantages of JAVA Language</p>
+        ✅Java is a popular programming language. It's easy to learn, with an intuitive syntax, and it can be used to
+        create Android apps.</p>🔖 Java isn't too difficult to learn, has an intuitive syntax, and can be used for
+        creating
+        android apps</p>🔖 Java enables you to write code more quickly than other languages</p>🔖 Java is supported by
+        hundreds of
+        freely available libraries
+
+    
+
+        </p>✅Java is a general-purpose computer programming language. Java is one of the languages in which much of web
+        and
+        applet code (or some kind of plugin) for interactive web pages, desktop computers, and mobile phones has
+        traditionally been written.</p>
+        </p>💡 Easy to learn</p>💡 Open-source & runs on many platforms</p>💡 Faster than C++ or Python
+
+        </p>✅Java is a programming language primarily used to write computer programs. Java enables developers to create
+        software and applications, mobile apps, video games, business software, web servers, etc.</p>💡 Efficient: A JVM
+        compiles bytecode into native machine code at runtime</p>💡 Portable: java runs virtually anywhere from
+        smartphones
+        to high-end servers</p>💡 Robust: Open source framework written in Java
+
+        </p>✅Java programming has come a long way since its release by Sun Microsystems. The Java platform is no longer
+        only
+        about Object-Oriented Programming but includes all of the features you would expect from other languages
+        including Operator Overloading, Anonymous Classes, Diamond Operators, etc.</p>🔖 Huge libraries that can be
+        leveraged</p>🔖 Vast developer community</p>🔖 Tested for stability over 25 years
+
+        </p>✅Java is a software program originally developed by Sun Microsystems. Java is used to develop server-side
+        applications, including web applications.
+        Java has a number of advantages over other programming languages:
+    </p> 💡Less bugs when compared to C++ or
+        COBOL
+        programs</p> 💡Easier to debug than C++ or COBOL programs</p> 💡Larger selection of 3rd party libraries available
+        than
+        other languages
+
+        </p>✅Java programming is a powerful programming language used by many of the world's largest companies. Learn
+        more
+        about why you should learn Java.</p>🔮 The fastest-growing skillset among software developers, according to Code
+        Academy</p>🔮 A reliable skill set: Java will be around for years, according to Stack Overflow </p>🔮 One of the
+        three
+        most popular development languages
+
+        </p>✅Java is one of the world's most powerful programming languages. Learn why it's so popular, how it can help
+        you
+        grow your business, and more!</p>🔖 Java is a general-purpose programming language</p>🔖 Java provides
+        cross-platform
+        compatibility</p>🔖 Java offers robust functionality
+
+
+    </div>
+    <div class="card text-bg-dark my-4">
+        <img src="https://source.unsplash.com/1400x150/?coding,technology" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <h5 class="card-title">Java Programming</h5>
+            <p class="card-text">
+                Java is a programming language and computing platform that includes everything from virtual machines
+                to<br />
+                code libraries. It's typically used for server-side development, but it also has applications for
+                end<br />
+                users too. Java is supported by all major operating systems: Windows, Mac OS X, Linux, Unix/AIX.<br />
+            </p>
+
+        </div>
+    </div>
+
+    </div>
+
+    <footer class="container my-4">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2021–2022 iTech, Inc. · <a
+            href="https://www.privacypolicygenerator.info/live.php?token=pYg54CcuiyJhUopJH7LXhLP0nkDmbF0F">Privacy</a>
+          · <a href="https://www.termsandconditionsgenerator.com/live.php?token=4Qi31r0unBdFRpoICYNdvklf4l270jGM">Terms</a>
+        </p>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iTech--Heaven for Programmer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html">iTech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="C.html">C</a></li>
+                            <li><a class="dropdown-item" href="C++.html">C++</a></li>
+                            <li>
+                                <!-- <hr class="dropdown-divider"> It's for Divider  -->
+                            </li>
+                            <li><a class="dropdown-item" href="Java.html">Java</a></li>
+                            <li><a class="dropdown-item" href="Python.html">Python</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li> -->
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div class="mx-2">
+
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+        </div>
+        </div>
+    </nav>
+
+
+    <!--Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to iTech</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SignUp Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get an iTech Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="fw-bold my-2">Python Programming</p>
+        <img src="https://source.unsplash.com/200x200/?Coding,programming" class="img-thumbnail" alt="...">
+
+
+        <p class="fw-bold my-4">Introduction</p>
+        <p class="lh-base my-2">
+            The Python programming language, created by Guido van Rossum in the late 1980s, has become one of the most
+            popular programming languages in the world due to its simplicity and versatility. Originally designed as an
+            interpreted scripting language,Python was not designed to be compiled into bytecode and run on a virtual
+            machine. However, with the creation of CPython (the primary implementation of Python), Python can be
+            compiled into bytecode and thus run by a virtual machine without major changes to the interpreter’s source
+            code or user interface.
+
+        </p>
+
+        <p class="fw-bold my-4">What is the Difference Between C and Python Languages?</p>
+
+        <p class="fw-normal">C--------> C is a compiled language.</p>
+        <p class="fw-normal">Python--> Python is an interpreted language.</p>
+        <p class="fw-normal">C--------> C is statically typed.</p>
+        <p class="fw-normal">Python--> Python is dynamically typed. </p>
+        <p class="fw-normal">C--------> C programs are saved with .c extension.</p>
+        <p class="fw-normal">Python--> Python programs are saved by .py extension.</p>
+        <p class="fw-normal">C--------> C language is fast.</p>
+        <p class="fw-normal">Python--> Python programming language is slow</p>
+        <p class="fw-normal">C--------> C doesn’t have native OOP.</p>
+        <p class="fw-normal">Python--> Python has OOP which is a part of the language.</p>
+
+
+        <p class="fw-bold my-4">Advantages of Python Language</p>
+         ✅Python is a language that's easy to learn, has tons of frameworks and libraries, makes code read more like
+        English, and integrates seamlessly with other languages.
+        <br/>
+        <br/>
+        💡 Uses simple English syntax<br/>
+        💡 Integrates well with other languages<br/>
+        💡 Supports object-oriented programming<br/>
+        <br/>
+
+         ✅Python is a programming language. It's one of the fastest-growing languages in the world, making it a great
+        place to start your journey as a developer.<br/>
+        <br/>
+        
+        💡 Python is very easy to read and write.<br/>
+        💡 There are tons of free resources available for beginners! <br/>
+        <br/>
+    
+         ✅Python is an object-oriented programming language. It's a general-purpose language meaning it can be used to
+        create anything from games, <br/>web apps, mobile apps, business software – you name it!
+        Here are some of its advantages: <br/>
+        <br/>
+        🔮 Easy to learn<br/>
+        
+        🔮 Readable<br/>
+        
+        🔮 Accessible – Free and open source<br/>
+        <br/>
+        
+         ✅Python is a programming language that helps you solve complex problems quickly.<br/>
+         <br/>
+        💡 Fast development cycle<br/>
+        💡 Language is easy to learn<br/>
+        💡 Supported by large community of developers<br/>
+        <br/>
+        
+         ✅Python is a popular programming language with powerful features, including: <br/>
+         <br/>
+        🔖 Easier for beginners to learn<br/>
+        🔖 Incredibly flexible - can be used for many different types of applications.
+        🔖 No matter what you're working on,Python has something that will make it easier.<br/>
+        <br/>
+        
+         ✅Python is a general-purpose programming language. It can be used to write anything from low-level system
+        software, high-performance <br/>scientific computing libraries, web applications, and desktop GUI programs.<br/>
+        <br/>
+        🔖 The syntax of Python is designed to allow programmers to express concepts 
+        in fewer lines of code than would be possible in languages such as C++ or Java<br/>
+        🔖 Python has many built-in data structures (including lists,
+        dictionaries, sets) which perform well<br/>
+        🔖 It's easy to find large communities of people who share the same
+        interests through mailing lists, IRC chats or wikis<br/>
+        <br/>
+
+         ✅Python is a multi-purpose, general-purpose programming language. <br/>Python can be used in many different types of
+        programming like games, web development, and system automation.<br/>
+        <br/>
+        🔮 Easier readability than other languages<br/>
+        🔮Debugging options available<br/>
+        🔮 Contains plenty of third party libraries<br/>
+        <br/>
+
+         ✅Python is a great choice if you want a quick and easy-to-read language. Python makes it easy to link data,<br/>
+        create charts, construct visualizations, process text files and more. Plus python programmers are in high
+        demand:<br/>
+        <br/>
+        🔮 Easy syntax<br/>
+        🔮 Readable code<br/>
+        🔮 Large community of tutorials<br/>
+        <br/>
+
+         ✅Python is a popular programming language that's easy to learn, versatile, powerful, and scalable.<br/>
+         <br/>
+        🔖 Python can be used as an interpretive or compiled language<br/>
+        🔖 Great for data visualization due to its quick loading time<br/>
+        🔖 New libraries constantly come out - some being published by Google!<br/>
+        <br/>
+
+         ✅Python is a programming language that lets you work more quickly and integrate systems more effectively. <br/>It's
+        popular for large-scale data processing, machine learning, big data analytics, scientific computing,<br/> as well as
+        web development around frameworks like Django.<br/>
+        <br/>
+        🔖 Efficient coding<br/>
+        🔖 Integrates easily with other systems<br/>
+        🔖 Scalable<br/>
+
+    </div>
+    <div class="card text-bg-dark my-4">
+        <img src="https://source.unsplash.com/1400x150/?coding,technology" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">
+
+                Python is a programming language that lets you work more quickly and integrate systems more
+                effectively.<br />
+                It's popular for large-scale data processing, machine learning, big data analytics, scientific<br />
+                computing, as well as web development around frameworks like Django.
+            </p>
+
+        </div>
+    </div>
+
+    </div>
+
+    <footer class="container my-4">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2021–2022 iTech, Inc. · <a
+            href="https://www.privacypolicygenerator.info/live.php?token=pYg54CcuiyJhUopJH7LXhLP0nkDmbF0F">Privacy</a>
+          · <a href="https://www.termsandconditionsgenerator.com/live.php?token=4Qi31r0unBdFRpoICYNdvklf4l270jGM">Terms</a>
+        </p>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
